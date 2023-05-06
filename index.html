@@ -347,19 +347,20 @@
             </a></li>
         </ul>
       </div>
-      <div class="footer-subscription">
-        <strong class="footer-subscription-title">Підпишіться на розсилку</strong>
-        <div class="footer-subscription-wrapper">
-          <input name="user-e-mail" class="footer-subscription-input"
-          type="email" placeholder="E-mail" required>
-          <button type="submit" class="footer-subscription-btn">
-            Підписатися
-            <svg class="footer-subscription-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
+      <form>
+        <div class="footer-subscription">
+          <strong class="footer-subscription-title">Підпишіться на розсилку</strong>
+          <div class="footer-subscription-wrapper">
+            <input name="user-e-mail" class="footer-subscription-input" type="email" placeholder="E-mail" required>
+            <button type="submit" class="footer-subscription-btn">
+              Підписатися
+              <svg class="footer-subscription-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
-      </div>
+      </form>
     </div>
   </footer>
 
@@ -370,39 +371,33 @@
           <use href="./images/icons.svg#close-icon"></use>
         </svg>
       </button>
-      <form action="" class="contact-form">
+      <form class="contact-form">
         <strong class="contact-form-title">
           Залиште свої дані, ми вам передзвонимо</strong>
 
-        <label class="contact-form-label">
-          <span class="contact-form-name">Ім'я</span>
-          <div class="contact-form-wrapper">
-            <input name="user-name" class="contact-form-input" type="text" required>
-            <svg class="contact-form-icon" width="18" height="18">
-              <use href="./images/icons.svg#person-icon"></use>
-            </svg>
-          </div>
-        </label>
+        <label for="user_name" class="contact-form-label"><span class="contact-form-name">Ім'я</span></label>
+        <div class="contact-form-wrapper">
+          <input name="user-name" class="contact-form-input" type="text" id="user_name" required>
+          <svg class="contact-form-icon" width="18" height="18">
+            <use href="./images/icons.svg#person-icon"></use>
+          </svg>
+        </div>
 
-        <label class="contact-form-label">
-          <span class="contact-form-name">Телефон</span>
-          <div class="contact-form-wrapper">
-            <input name="user-tel" class="contact-form-input" type="tel" required>
-            <svg class="contact-form-icon" width="18" height="18">
-              <use href="./images/icons.svg#phone-icon"></use>
-            </svg>
-          </div>
-        </label>
+        <label for="user_tel" class="contact-form-label"><span class="contact-form-name">Телефон</span></label>
+        <div class="contact-form-wrapper">
+          <input name="user-tel" class="contact-form-input" type="tel" id="user_tel" required>
+          <svg class="contact-form-icon" width="18" height="18">
+            <use href="./images/icons.svg#phone-icon"></use>
+          </svg>
+        </div>
 
-        <label class="contact-form-label">
-          <span class="contact-form-name">Пошта</span>
-          <div class="contact-form-wrapper">
-            <input name="user-email" class="contact-form-input" type="email" required>
-            <svg class="contact-form-icon" width="18" height="18">
-              <use href="./images/icons.svg#email-icon"></use>
-            </svg>
-          </div>
-        </label>
+        <label for="user_email" class="contact-form-label"><span class="contact-form-name">Пошта</span></label>
+        <div class="contact-form-wrapper">
+          <input name="user-email" class="contact-form-input" type="email" id="user_email" required>
+          <svg class="contact-form-icon" width="18" height="18">
+            <use href="./images/icons.svg#email-icon"></use>
+          </svg>
+        </div>
 
         <label class="contact-form-label-message">
           <span class="contact-form-name">Коментар</span>
@@ -416,7 +411,7 @@
               <use href="./images/icons.svg#vector"></use>
             </svg>
             <span class="policy-title">Погоджуюся з розсилкою та приймаю
-              <a href="">Умови договору</a></span>
+              <a class="policy-title-link" href="">Умови договору</a></span>
           </label>
         </div>
 
